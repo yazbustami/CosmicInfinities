@@ -1,0 +1,20 @@
+[
+  {
+    "username": "Bob Smith",
+    "email": "bkernighan@gmail.com",
+    "password": "password01",
+    "sign": "Gemini"
+  },
+  {
+    "username": "Tim Lee",
+    "email": "mkanatalexander@gmail.com",
+    "password": "password02",
+    "sign": "Leo"
+  },
+  {
+    "username": "Arine Burk",
+    "email": "wtls@gmail.com",
+    "password": "password03",
+    "sign": "Virgo"
+  }
+]
