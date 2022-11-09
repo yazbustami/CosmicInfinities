@@ -19,6 +19,11 @@ const userSchema = new Schema({
     required: true,
     minlength: 5,
   },
+  sign: {
+    type: String,
+    required: true,
+    trim: true,
+  },
   thoughts: [
     {
       type: Schema.Types.ObjectId,
