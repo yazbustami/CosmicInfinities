@@ -1,16 +1,14 @@
-
-
 const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
-type User {
+  type User {
     _id: ID
     username: String
     email: String
     password: String
-    sign: String
     thoughts: [Thought]!
   }
+
   type Thought {
     _id: ID
     thoughtText: String
@@ -40,22 +38,13 @@ type User {
   }
 
   type Mutation {
-    addUser(username: String!, email: String!, password: String! sign: String! ): Auth
-
+    addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    
     addThought(thoughtText: String!): Thought
-    
-    addComment(
-      thoughtId: ID!
-      commentText: String!
-    ): Thought
-    
+    addComment(thoughtId: ID!, commentText: String!): Thought
     removeThought(thoughtId: ID!): Thought
     removeComment(thoughtId: ID!, commentId: ID!): Thought
   }
 `;
 
 module.exports = typeDefs;
-
-// Removed commentAuthor: String! from line 52. thoughtAuthor: String! - line 47

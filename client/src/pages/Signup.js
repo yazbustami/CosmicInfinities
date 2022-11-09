@@ -11,7 +11,6 @@ const Signup = () => {
     username: '',
     email: '',
     password: '',
-    sign: "Capricorn"
   });
   const [addUser, { error, data }] = useMutation(ADD_USER);
 
@@ -23,7 +22,7 @@ const Signup = () => {
       [name]: value,
     });
   };
-  // submit form
+
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     console.log(formState);

@@ -1,5 +1,4 @@
-
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
@@ -18,22 +17,6 @@ const Profile = () => {
   });
 
   const user = data?.me || data?.user || {};
-  const [signState, setSignState] = useState({})
-
-  // Using API 
-useEffect(() => {
-   const profile = data?.me || data?.profile || {};
-    console.log(profile)
-   if(profile?.sign){
-     fetch(`https://aztro.sameerkumar.website/?sign=${profile.sign}&day=today`, {method: "POST"})
-      .then(res => res.json())
-       .then(data => {
-          setSignState(data)
-      })
-  }
-
-  }, [data])
-
   // navigate to personal profile page if username is yours
   if (Auth.loggedIn() && Auth.getProfile().data.username === userParam) {
     return <Navigate to="/me" />;
@@ -67,18 +50,6 @@ useEffect(() => {
             showUsername={false}
           />
         </div>
-
-        <div>
-        <p>{signState.date_range}</p>
-        <p>{signState["current_date"]}</p>
-        <p>{signState.description}</p>
-        <p>{signState.compatability}</p>
-        <p>{signState.mood}</p>
-        <p>{signState.color}</p>
-        <p>{signState.lucky_number}</p>
-        <p>{signState.lucky_time}</p>
-      </div>
-
         {!userParam && (
           <div
             className="col-12 col-md-10 mb-3 p-3"
