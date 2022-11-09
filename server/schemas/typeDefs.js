@@ -36,6 +36,7 @@ type User {
     user(username: String!): User
     thoughts(username: String): [Thought]
     thought(thoughtId: ID!): Thought
+    me: User
   }
 
   type Mutation {
@@ -46,7 +47,6 @@ type User {
     addComment(
       thoughtId: ID!
       commentText: String!
-      commentAuthor: String!
     ): Thought
     removeThought(thoughtId: ID!): Thought
     removeComment(thoughtId: ID!, commentId: ID!): Thought
@@ -54,3 +54,5 @@ type User {
 `;
 
 module.exports = typeDefs;
+
+//   commentAuthor: String! removed from type Mutation
