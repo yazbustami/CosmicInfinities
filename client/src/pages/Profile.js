@@ -1,31 +1,22 @@
-import React, {useEffect, useState} from 'react';
-
+import React from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
-import SkillsList from '../components/SkillsList';
-import SkillForm from '../components/SkillForm';
+import ThoughtForm from '../components/ThoughtForm';
+import ThoughtList from '../components/ThoughtList';
 
-import { QUERY_SINGLE_PROFILE, QUERY_ME } from '../utils/queries';
+import { QUERY_USER, QUERY_ME } from '../utils/queries';
 
 import Auth from '../utils/auth';
 
 const Profile = () => {
-  const { profileId } = useParams();
+  const { username: userParam } = useParams();
 
-  // If there is no `profileId` in the URL as a parameter, execute the `QUERY_ME` query instead for the logged in user's information
-  // const { loading, data } = useQuery(
-  //   profileId ? QUERY_SINGLE_PROFILE : QUERY_ME,
-  //   {
-  //     variables: { profileId: profileId },
-  //   }
-  // );
+  const { loading, data } = useQuery(userParam ? QUERY_USER : QUERY_ME, {
+    variables: { username: userParam },
+  });
 
-  const { loading, data } = useQuery(QUERY_ME);
-
-  // Check if data is returning from the `QUERY_ME` query, then the `QUERY_SINGLE_PROFILE` query
-  const profile = data?.me || data?.profile || {};
-  const [signState, setSignState] = useState({})
+  const user = data?.me || data?.user || {};
 
   // Using API 
   useEffect(() => {
@@ -41,8 +32,8 @@ const Profile = () => {
 
   }, [data])
 
-  // Use React Router's `<Navigate />` component to redirect to personal profile page if username is yours
-  if (Auth.loggedIn() && Auth.getProfile().data._id === profileId) {
+  // navigate to personal profile page if username is yours
+  if (Auth.loggedIn() && Auth.getProfile().data.username === userParam) {
     return <Navigate to="/me" />;
   }
 
@@ -50,41 +41,38 @@ const Profile = () => {
     return <div>Loading...</div>;
   }
 
-  if (!profile?.name) {
+  if (!user?.username) {
     return (
       <h4>
-        You need to be logged in to see your profile page. Use the navigation
-        links above to sign up or log in!
+        You need to be logged in to see this. Use the navigation links above to
+        sign up or log in!
       </h4>
     );
   }
 
   return (
     <div>
-      <h2 className="card-header">
-        {profileId ? `${profile.name}'s` : 'Your'} friends have endorsed these
-        skills...
-      </h2>
+      <div className="flex-row justify-center mb-3">
+        <h2 className="col-12 col-md-10 bg-dark text-light p-3 mb-5">
+          Viewing {userParam ? `${user.username}'s` : 'your'} profile.
+        </h2>
 
-      <div>
-        <p>{signState.date_range}</p>
-        <p>{signState["current_date"]}</p>
-        <p>{signState.description}</p>
-        <p>{signState.compatability}</p>
-        <p>{signState.mood}</p>
-        <p>{signState.color}</p>
-        <p>{signState.lucky_number}</p>
-        <p>{signState.lucky_time}</p>
-      </div>
-      {/* {profile.skills?.length > 0 && (
-        <SkillsList
-          skills={profile.skills}
-          isLoggedInUser={!profileId && true}
-        />
-      )} */}
-
-      <div className="my-4 p-4" style={{ border: '1px dotted #1a1a1a' }}>
-        <SkillForm profileId={profile._id} />
+        <div className="col-12 col-md-10 mb-5">
+          <ThoughtList
+            thoughts={user.thoughts}
+            title={`${user.username}'s thoughts...`}
+            showTitle={false}
+            showUsername={false}
+          />
+        </div>
+        {!userParam && (
+          <div
+            className="col-12 col-md-10 mb-3 p-3"
+            style={{ border: '1px dotted #1a1a1a' }}
+          >
+            <ThoughtForm />
+          </div>
+        )}
       </div>
     </div>
   );
