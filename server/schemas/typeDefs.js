@@ -43,11 +43,14 @@ type User {
     addUser(username: String!, email: String!, password: String! sign: String! ): Auth
 
     login(email: String!, password: String!): Auth
-    addThought(thoughtText: String!, thoughtAuthor: String!): Thought
+    
+    addThought(thoughtText: String!): Thought
+    
     addComment(
       thoughtId: ID!
       commentText: String!
     ): Thought
+    
     removeThought(thoughtId: ID!): Thought
     removeComment(thoughtId: ID!, commentId: ID!): Thought
   }
@@ -55,4 +58,4 @@ type User {
 
 module.exports = typeDefs;
 
-//   commentAuthor: String! removed from type Mutation
+// Removed commentAuthor: String! from line 52. thoughtAuthor: String! - line 47

@@ -48,39 +48,74 @@ const resolvers = {
 
       return { token, user };
     },
-    addThought: async (parent, { thoughtText, thoughtAuthor }) => {
-      const thought = await Thought.create({ thoughtText, thoughtAuthor });
-
-      await User.findOneAndUpdate(
-        { username: thoughtAuthor },
-        { $addToSet: { thoughts: thought._id } }
-      );
-
-      return thought;
-    },
-    addComment: async (parent, { thoughtId, commentText, commentAuthor }) => {
-      return Thought.findOneAndUpdate(
-        { _id: thoughtId },
-        {
-          $addToSet: { comments: { commentText, commentAuthor } },
-        },
-        {
-          new: true,
-          runValidators: true,
+    addThought: async (parent, { thoughtText }, context) => {
+        if (context.user) {
+          const thought = await Thought.create({
+            thoughtText,
+            thoughtAuthor: context.user.username,
+          });
+  
+          await User.findOneAndUpdate(
+            { _id: context.user._id },
+            { $addToSet: { thoughts: thought._id } }
+          );
+  
+          return thought;
         }
-      );
+        throw new AuthenticationError('You need to be logged in!');
+      },
+      addComment: async (parent, { thoughtId, commentText }, context) => {
+        if (context.user) {
+          return Thought.findOneAndUpdate(
+            { _id: thoughtId },
+            {
+              $addToSet: {
+                comments: { commentText, commentAuthor: context.user.username },
+              },
+            },
+            {
+              new: true,
+              runValidators: true,
+            }
+          );
+        }
+        throw new AuthenticationError('You need to be logged in!');
+      },
+      removeThought: async (parent, { thoughtId }, context) => {
+        if (context.user) {
+          const thought = await Thought.findOneAndDelete({
+            _id: thoughtId,
+            thoughtAuthor: context.user.username,
+          });
+  
+          await User.findOneAndUpdate(
+            { _id: context.user._id },
+            { $pull: { thoughts: thought._id } }
+          );
+  
+          return thought;
+        }
+        throw new AuthenticationError('You need to be logged in!');
+      },
+      removeComment: async (parent, { thoughtId, commentId }, context) => {
+        if (context.user) {
+          return Thought.findOneAndUpdate(
+            { _id: thoughtId },
+            {
+              $pull: {
+                comments: {
+                  _id: commentId,
+                  commentAuthor: context.user.username,
+                },
+              },
+            },
+            { new: true }
+          );
+        }
+        throw new AuthenticationError('You need to be logged in!');
+      },
     },
-    removeThought: async (parent, { thoughtId }) => {
-      return Thought.findOneAndDelete({ _id: thoughtId });
-    },
-    removeComment: async (parent, { thoughtId, commentId }) => {
-      return Thought.findOneAndUpdate(
-        { _id: thoughtId },
-        { $pull: { comments: { _id: commentId } } },
-        { new: true }
-      );
-    },
-  },
-};
-
-module.exports = resolvers;
+  };
+  
+  module.exports = resolvers;
+  
