@@ -17,21 +17,6 @@ const Profile = () => {
   });
 
   const user = data?.me || data?.user || {};
-
-  // // Using API 
-  // useEffect(() => {
-  //   const profile = data?.me || data?.profile || {};
-  //   console.log(profile)
-  //   if(profile?.sign){
-  //     fetch(`https://aztro.sameerkumar.website/?sign=${profile.sign}&day=today`, {method: "POST"})
-  //       .then(res => res.json())
-  //       .then(data => {
-  //         setSignState(data)
-  //       })
-  //   }
-
-  // }, [data])
-
   // navigate to personal profile page if username is yours
   if (Auth.loggedIn() && Auth.getProfile().data.username === userParam) {
     return <Navigate to="/me" />;

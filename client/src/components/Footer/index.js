@@ -25,7 +25,7 @@ const Footer = () => {
           >
             ❤️
           </span>{' '}
-          by the Cosmic Infinities Team.
+          by the Cosmic Infinities team.
         </h4>
       </div>
     </footer>

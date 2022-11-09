@@ -11,7 +11,6 @@ const Signup = () => {
     username: '',
     email: '',
     password: '',
-    sign: ''
   });
   const [addUser, { error, data }] = useMutation(ADD_USER);
 
@@ -23,7 +22,7 @@ const Signup = () => {
       [name]: value,
     });
   };
-  // submit form
+
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     console.log(formState);
@@ -75,11 +74,6 @@ const Signup = () => {
                   type="password"
                   value={formState.password}
                   onChange={handleChange}
-                />
-                <input
-                  className='form-input'
-                  placeholder='Choose sign'
-                  type='list'
                 />
                 <button
                   className="btn btn-block btn-primary"
