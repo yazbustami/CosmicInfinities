@@ -19,5 +19,9 @@
   "engines": {
     "node": "16.17.0",
     "npm": "8.15.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "react-bootstrap": "^2.6.0"
   }
 }
