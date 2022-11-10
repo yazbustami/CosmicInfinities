@@ -1,20 +1,32 @@
 [
   {
-    "username": "Bob Smith",
-    "email": "bkernighan@gmail.com",
-    "password": "password01",
+    "username": "Jessica Morse",
+    "email": "jessica@jessica.com",
+    "password": "jessica",
+    "sign": "Aries"
+  },
+  {
+    "username": "Yasmin Bustami",
+    "email": "yasming@yasmin.com",
+    "password": "yasmin",
+    "sign": "Aries"
+  },
+  {
+    "username": "Marianella Gamboa",
+    "email": "marianella@marianella.com",
+    "password": "marianella",
     "sign": "Gemini"
   },
   {
-    "username": "Tim Lee",
-    "email": "mkanatalexander@gmail.com",
-    "password": "password02",
-    "sign": "Leo"
+    "username": "Tatiana Collins",
+    "email": "tatiana@tatiana.com",
+    "password": "tatiana",
+    "sign": "Gemini"
   },
   {
-    "username": "Arine Burk",
-    "email": "wtls@gmail.com",
-    "password": "password03",
-    "sign": "Virgo"
+    "username": "Anna Kowalczyk",
+    "email": "anna@anna.com",
+    "password": "anna",
+    "sign": "Cancer"
   }
 ]
