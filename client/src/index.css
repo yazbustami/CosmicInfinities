@@ -920,11 +920,12 @@ a:hover {
 
 /* BACKGROUND UTILS */
 .bg-primary {
-  background-color: #2d3e50 !important;
+  background-color: #d211cc !important;
 }
+/* changes cosmic background header */
 
 .bg-info {
-  background-color: #1bbc9b !important;
+  background-color: #1016ba !important;
 }
 
 .bg-danger {
@@ -1030,8 +1031,9 @@ a:hover {
 }
 
 .btn.btn-info {
-  background-color: #1bbc9b;
+  background-color: #511bbc;
   color: #ffffff;
+  /* changes color of login button */
 }
 
 .btn.btn-info:hover {
