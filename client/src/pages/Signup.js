@@ -6,7 +6,7 @@ import { ADD_USER } from '../utils/mutations';
 
 import Auth from '../utils/auth';
 // import "../pages/Styles/SU.css"
-import galaxy from "../pages/Assets/Pictures/galaxy1.jpeg"
+// import galaxy from "../pages/Assets/Pictures/galaxy1.jpeg"
 
 
 const Signup = () => {
