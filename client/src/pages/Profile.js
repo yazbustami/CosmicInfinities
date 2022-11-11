@@ -9,18 +9,21 @@ import Auth from '../utils/auth';
 
 const Profile = () => {
   const { username: userParam } = useParams();
+  console.log(userParam);
 
   const { loading, data } = useQuery(userParam ? QUERY_USER : QUERY_ME, {
     variables: { username: userParam },
   });
+  console.log(data);
 
   const user = data?.me || data?.user || {};
+  console.log("user", user);
 
   const [signState, setSignState] = useState({})
 
   // Using API 
   useEffect(() => {
-    const profile = data?.me || data?.profile || {};
+    const profile = data?.me || data?.user || {};
     console.log(profile)
     if(profile?.sign){
       fetch(`https://aztro.sameerkumar.website/?sign=${profile.sign}&day=today`, {method: "POST"})
@@ -61,7 +64,7 @@ const Profile = () => {
         <p>{signState.date_range}</p>
         <p>{signState["current_date"]}</p>
         <p>Description: {signState.description}</p>
-        <p>Compatability: {signState.compatability}</p>
+        {/* <p>Compatability: {signState.compatability}</p> */}
         <p>Mood: {signState.mood}</p>
         <p>Color: {signState.color}</p>
         <p>Lucky Number: {signState.lucky_number}</p>
