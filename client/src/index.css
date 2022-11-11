@@ -421,14 +421,19 @@ button {
   margin: 0;
 }
 
-a {
-  color: #1b89bc;
-  text-decoration: none;
+p.m-0 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
 }
 
-a:hover {
-  color: #065b83;
-  text-decoration: underline;
+.text-light a {
+  color: white;
+  text-decoration: none;
+  font-size: larger;
+}
+
+.text-light a:hover {
+  color: #a97793;
 }
 
 /* HEIGHT / WIDTH UTILS */
@@ -1041,11 +1046,14 @@ color: black
 .btn.btn-info {
   background-color: #d9e9e8;
   color: #511626;
+  border: white;
   /* changes color of login button */
 }
 
 .btn.btn-info:hover {
   background-color: #a97793;
+  text-decoration: none;
+  color: white;
 }
 
 .btn.btn-light {
@@ -1054,7 +1062,9 @@ color: black
 }
 
 .btn.btn-light:hover {
-  background-color: #a97793
+  background-color: #a97793;
+  text-decoration: none;
+  color: white;
 }
 
 .btn.btn-dark {
@@ -1342,6 +1352,11 @@ label form [type='radio'] {
 .col-12 {
   flex: 0 0 100%;
   max-width: 100%;
+}
+
+h6 {
+  color: white;
+  font-size: medium;
 }
 
 /* col-sm */
