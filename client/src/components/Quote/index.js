@@ -61,8 +61,8 @@ function Quotes() {
         <div className="card text-center m-3">
             {/* <h5 className="card-header">Simple GET Request</h5> */}
             <ol >
-                <li>{items.content}</li>
-                <li>~{items.author}</li>
+                <h6>{items.content}</h6>
+                <h6>~{items.author}</h6>
             </ol>
         </div>
     );
