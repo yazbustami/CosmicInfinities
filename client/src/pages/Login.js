@@ -98,7 +98,11 @@ const Login = (props) => {
           </div>
         </div>
       </div>
-      <column> <Quote/> </column>
+
+      <div class="typewriter"> 
+      <h4> <Quote/> </h4>
+      </div>
+
     </main>
   );
 };
