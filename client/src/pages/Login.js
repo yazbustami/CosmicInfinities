@@ -6,6 +6,7 @@ import Quote from '../components/Quote'
 //render quote on page
 //https://react-http-get-request-examples-fetch.stackblitz.io
 import Auth from '../utils/auth';
+import { Card } from 'react-bootstrap';
 
 const Login = (props) => {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -83,7 +84,7 @@ const Login = (props) => {
                   Submit
                 </button>
               </form>
-<Quote />
+        {/* <Quote /> */}
               </>
 
 
@@ -97,6 +98,7 @@ const Login = (props) => {
           </div>
         </div>
       </div>
+      <column> <Quote/> </column>
     </main>
   );
 };
