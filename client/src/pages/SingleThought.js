@@ -37,7 +37,7 @@ const SingleThought = () => {
           style={{
             fontSize: '1.5rem',
             fontStyle: 'italic',
-            border: '2px dotted #1a1a1a',
+            // border: '2px dotted #1a1a1a',
             lineHeight: '1.5',
           }}
         >
@@ -48,7 +48,8 @@ const SingleThought = () => {
       <div className="my-5">
         <CommentList comments={thought.comments} />
       </div>
-      <div className="m-3 p-4" style={{ border: '1px dotted #1a1a1a' }}>
+      <div className="m-3 p-4" >
+      {/* style={{ border: '1px dotted #1a1a1a' }}> */}
         <CommentForm thoughtId={thought._id} />
       </div>
     </div>
