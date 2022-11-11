@@ -22,8 +22,8 @@ function Quotes() {
     return (
         <div className="card text-center m-3">
             <ol >
-                <li>{items.content}</li>
-                <li>~{items.author}</li>
+                <h6>{items.content}</h6>
+                <h6>~{items.author}</h6>
             </ol>
         </div>
     );
