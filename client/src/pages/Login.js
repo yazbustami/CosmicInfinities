@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react';//wrote useEffect
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../utils/mutations';
-
+import Quote from '../components/Quote'
+//render quote on page
+//https://react-http-get-request-examples-fetch.stackblitz.io
 import Auth from '../utils/auth';
 
 const Login = (props) => {
@@ -40,6 +42,9 @@ const Login = (props) => {
     });
   };
 
+  // Using API 
+  // https://api.quotable.io/random
+
   return (
     <main className="flex-row justify-center mb-4">
       <div className="col-12 col-lg-10">
@@ -52,7 +57,8 @@ const Login = (props) => {
                 <Link to="/home">back to the homepage.</Link>
               </p>
             ) : (
-              <form onSubmit={handleFormSubmit}>
+              <>
+                            <form onSubmit={handleFormSubmit}>
                 <input
                   className="form-input"
                   placeholder="Your email"
@@ -77,6 +83,10 @@ const Login = (props) => {
                   Submit
                 </button>
               </form>
+<Quote />
+              </>
+
+
             )}
 
             {error && (

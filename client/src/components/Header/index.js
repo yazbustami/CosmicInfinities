@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import constellation from '../../pages/Assets/Pictures/favicon-32x32.png'
 
 import Auth from '../../utils/auth';
 
@@ -13,7 +14,10 @@ const Header = () => {
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
           <Link className="text-light" to="/">
-            <h1 className="m-0">Cosmic Infinities</h1>
+            {/* <h1 className="m-0">C {''} smic Infinities</h1> */}
+            <h1 className="m-0"> <a href="/"
+                >C<img src={constellation} width="25px"
+                    alt=""/>smic Infinities </a> </h1>
           </Link>
           <p className="m-0">Look at whats written in the stars.</p>
         </div>
