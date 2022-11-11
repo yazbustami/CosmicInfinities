@@ -14,12 +14,10 @@ const Header = () => {
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
           <Link className="text-light" to="/">
-            {/* <h1 className="m-0">C {''} smic Infinities</h1> */}
-            <h1 className="m-0"> <a href="/"
-                >C<img src={constellation} width="25px"
-                    alt=""/>smic Infinities </a> </h1>
+            <h1 className="m-0"> <a href="/">
+              C<img src={constellation} width="25px" alt=""/>smic Infinities </a> </h1>
           </Link>
-          <p className="m-0">Look at whats written in the stars.</p>
+          <p className="m-0">Look at what's written in the stars...</p>
         </div>
         <div>
           {Auth.loggedIn() ? (
@@ -36,10 +34,10 @@ const Header = () => {
             </>
           ) : (
             <>
-              <Link className="btn btn-lg btn-info m-2" to="/login">
+              <Link className="btn btn-sm btn-info m-2" to="/login">
                 Login
               </Link>
-              <Link className="btn btn-lg btn-light m-2" to="/signup">
+              <Link className="btn btn-sm btn-light m-2" to="/signup">
                 Signup
               </Link>
             </>

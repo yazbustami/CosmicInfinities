@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import constellation from '../../pages/Assets/Pictures/favicon-32x32.png'
 
 const Footer = () => {
   const location = useLocation();
@@ -16,7 +17,7 @@ const Footer = () => {
           </button>
         )}
         <h6>
-         Cosmic Infinities : Yasmin Bustami, Tatiana Collins, Jessica Morse, Anna Kowalczyk, Marianella Gamboa
+         <img src={constellation} width="15px" alt=""/> Cosmic Infinities
         </h6>
       </div>
     </footer>
