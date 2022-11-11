@@ -573,6 +573,10 @@ a:hover {
   margin-right: auto !important;
 }
 
+blockquote.p-4 {
+color: black
+}
+
 /* Margin-left */
 .ml-0 {
   margin-left: 0 !important;
