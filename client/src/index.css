@@ -19,6 +19,7 @@ html {
  */
 body {
   margin: 0;
+  background-color: #f5eaee;
 }
 
 /**
@@ -100,7 +101,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Merriweather', serif;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -351,15 +352,17 @@ END NORMALIZE CSS
 html,
 body {
   min-height: 100%;
+  background-color: #f5eaee
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Merriweather', serif;
   font-size: 16px;
-  color: #ffffff;
-  background-image: linear-gradient(to right, rgb(128, 119, 134) , rgb(84, 34, 53));
+  color: black;
+  background-color: #f5eaee;
+  /* background-image: linear-gradient(to right, rgb(128, 119, 134) , rgb(84, 34, 53)); */
 }
 
 h1,
@@ -368,7 +371,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Merriweather', serif;
   margin: 0 0 0.5rem;
   line-height: 1.25;
 }
@@ -929,9 +932,10 @@ color: black
 
 /* BACKGROUND UTILS */
 .bg-primary {
-  /* background-color: #8b648a !important; */
-  background-image: url(./pages/Assets/Pictures/galaxyred.jpeg);
-  background-size: cover;
+  background-color: #f5eaee !important;
+  /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg); */
+  /* background-size: cover; */
+
 
 }
 /* changes cosmic background header */
@@ -949,8 +953,10 @@ color: black
 }
 
 .bg-dark {
-    background-image: url(./pages/Assets/Pictures/galaxyred.jpeg);
-  background-size: cover;
+    /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg);
+  background-size: cover; */
+  /* background-color: #ebe2db !important; */
+  background-color: #f5eaee;
 }
 
 .bg-white {
@@ -1500,7 +1506,7 @@ h6 {
   .col-md-10 {
     flex: 0 0 83.33333%;
     max-width: 83.33333%;
-    background-image: url(./pages/Assets/Pictures/galaxyred.jpeg);
+    /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg); */
   }
   .col-md-11 {
     flex: 0 0 91.66667%;
@@ -1735,6 +1741,26 @@ h6 {
   .align-content-center-xl {
     align-content: center;
   }
+}
+
+header {
+  background-color: #ebe2db;
+}
+
+#landing-row {
+  align-items: center;
+  justify-content: center;
+}
+
+#landing-pitch {
+  align-items: center;
+  justify-content: center;
+}
+
+#landing-text {
+  font-size: 4em;
+  text-align: center;
+  padding: 10px;
 }
 
 .typewriter h4 {
