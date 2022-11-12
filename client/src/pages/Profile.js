@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
@@ -25,8 +25,8 @@ const Profile = () => {
   useEffect(() => {
     const profile = data?.me || data?.user || {};
     console.log(profile)
-    if(profile?.sign){
-      fetch(`https://aztro.sameerkumar.website/?sign=${profile.sign}&day=today`, {method: "POST"})
+    if (profile?.sign) {
+      fetch(`https://aztro.sameerkumar.website/?sign=${profile.sign}&day=today`, { method: "POST" })
         .then(res => res.json())
         .then(data => {
           console.log(data);
@@ -55,21 +55,44 @@ const Profile = () => {
   }
 
   return (
-    <div>
-      <div className="flex-row justify-center mb-3">
-        <h2 className="col-12 col-md-10 bg-dark text-light p-3 mb-5">
-          Viewing {userParam ? `${user.username}'s` : 'your'} profile.
-        </h2>
-        <div>
-        <p>{signState.date_range}</p>
-        <p>{signState["current_date"]}</p>
-        <p>Description: {signState.description}</p>
-        {/* <p>Compatability: {signState.compatability}</p> */}
-        <p>Mood: {signState.mood}</p>
-        <p>Color: {signState.color}</p>
-        <p>Lucky Number: {signState.lucky_number}</p>
-        <p>Lucky Time: {signState.lucky_time}</p>
-      </div>
+
+
+    <div className="flex-row justify-center mb-3 row">
+      <h2 className="col-12 col-md-10 bg-dark text-light p-3 mb-5 w-100">
+        Viewing {userParam ? `${user.username}'s` : 'your'} profile.
+      </h2>
+
+      <div className="card mb-3"
+        style={{ maxWidth: '100%' }}>
+        <div className="row no-gutters">
+          <div className="col-md-4">
+            <img src="..." alt="..." />
+          </div>
+          <div className="col-md-8 p-0">
+            <div className="card-body">
+              <h5 className="card-title">{signState["current_date"]}</h5>
+              <p className="card-text">Description: {signState.description}</p>
+              <p className="card-text">Mood: {signState.mood} </p>
+              <p className="card-text">Color: {signState.color}</p>
+              <p className="card-text">Lucky Number: {signState.lucky_number}</p>
+              <p className="card-text">Lucky Time: {signState.lucky_time}</p>
+              <p className="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div><div>
+
+
+        {/* <div>
+            <p>{signState.date_range}</p>
+            <p>{signState["current_date"]}</p>
+            <p>Description: {signState.description}</p>
+            <p>Compatability: {signState.compatability}</p> 
+            <p>Mood: {signState.mood}</p>
+            <p>Color: {signState.color}</p>
+            <p>Lucky Number: {signState.lucky_number}</p>
+            <p>Lucky Time: {signState.lucky_time}</p>
+          </div> */}
 
       </div>
     </div>

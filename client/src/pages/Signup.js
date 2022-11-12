@@ -7,7 +7,7 @@ import { ADD_USER } from '../utils/mutations';
 import Auth from '../utils/auth';
 
 import virgo from './Assets/Pictures/virgo.png';
-
+// import "./Styles/SU.css"
 const Signup = () => {
   const [formState, setFormState] = useState({
     username: '',
@@ -42,7 +42,7 @@ const Signup = () => {
   };
 
   return (
-    <main className="flex-row justify-center mb-4">
+    <main className="flex-row justify-center mb-4 ">
       <div className="col-12 col-lg-10">
         <div className="card">
           <h4 className="card-header bg-dark text-light p-2">Sign Up</h4>
@@ -106,6 +106,7 @@ const Signup = () => {
       </div>
       
 {/* Cards */}
+
       <div className="row row-cols-1 row-cols-md-4">
   <div className="col mb-4">
     <div className="card">
