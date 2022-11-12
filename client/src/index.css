@@ -1285,8 +1285,9 @@ label form [type='radio'] {
 [class*='col-'] {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 4px;
+  padding-left: 1px;
+  padding-bottom: 20px;
 }
 
 .col-auto {
@@ -1760,3 +1761,4 @@ h6 {
   from, to { border-color: transparent }
   50% { border-color: orange }
 }
+
