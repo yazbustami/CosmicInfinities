@@ -6,6 +6,7 @@ import { useQuery } from '@apollo/client';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 
 import Auth from '../utils/auth';
+import cosmic from './Assets/cardHeaders/cosmicCard.png';
 
 const Profile = () => {
   const { username: userParam } = useParams();
@@ -66,7 +67,7 @@ const Profile = () => {
         style={{ maxWidth: '100%' }}>
         <div className="row no-gutters">
           <div className="col-md-4">
-            <img src="..." alt="..." />
+            <img style={{width: 200, height: 450}}src={cosmic} alt="..." />
           </div>
           <div className="col-md-8 p-0">
             <div className="card-body">

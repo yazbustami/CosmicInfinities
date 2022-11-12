@@ -428,6 +428,25 @@ p.m-0 {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
 }
+header {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  color: black;
+  background-color: #f5eaee;
+
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  color: black;
+  background-color: #f5eaee !important;
+
+}
 
 .text-light a {
   color: white;
@@ -1110,21 +1129,22 @@ color: black
 }
 
 .card {
-  border: 1px solid #1a1a1a;
+  border: 1px solid #978e92;
   margin-bottom: 1rem;
+  box-shadow: 6px 6px 3px #978e92;
 }
 
 .card .card-header {
   padding: 0.375rem;
-  background-image: url(./pages/Assets/Pictures/galaxyred.jpeg);
+  /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg); */
   color: #d9e9e8;
 }
 
 .card .card-body {
   padding: 0.375rem;
-  background-image: url(./pages/Assets/Pictures/galaxyred.jpeg);
+  /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg); */
   background-size: cover;
-  color: white;
+  color: black;
 }
 
 .card .card-footer {
@@ -1133,7 +1153,7 @@ color: black
 }
 
 .card.card-rounded {
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
 }
 
 .card.card-rounded .card-header {
