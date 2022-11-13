@@ -975,6 +975,7 @@ color: black
     /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg);
   background-size: cover; */
   /* background-color: #ebe2db !important; */
+  background-image: url(./pages/Assets/Pictures/galaxyred.jpeg);
   background-color: #f5eaee;
 }
 
@@ -1762,49 +1763,3 @@ h6 {
     align-content: center;
   }
 }
-
-header {
-  background-color: #ebe2db;
-}
-
-#landing-row {
-  align-items: center;
-  justify-content: center;
-}
-
-#landing-pitch {
-  align-items: center;
-  justify-content: center;
-}
-
-#landing-text {
-  font-size: 4em;
-  text-align: center;
-  padding: 10px;
-}
-
-.typewriter h4 {
-  color: black;
-  opacity: .5;
-  font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid rgb(0, 0, 0); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .08em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
-}
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
-}
-
