@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import constellation from '../../pages/Assets/Pictures/favicon-32x32.png'
+import constellation from '../../pages/Assets/Pictures/favicon-32x32.png'
 import Auth from '../../utils/auth';
 // import logo from '../../pages/Assets/Pictures/cosmicLogo.png'
 // import headImg from '../../pages/Assets/allPages/headerImg.png';
@@ -21,10 +21,8 @@ const Header = () => {
       <div className="header-wrapper">
         <div className="header-image">
           <Link className="text-light" to="/">
-            {/* <h1 className="m-0"> <a href="/">
-              C<img src={constellation} width="25px" alt=""/>smic Infinities </a> </h1> */}
-            {/* <img style={{width: 550, height: 200, alignSelf: 'center' }}src={logo} alt="logo" /> */}
-            {/* <img className="header" src={headImg} alt="header" /> */}
+            <h1 className="m-0 header-logo"> <a href="/">
+              C<img src={constellation} width="25px" alt=""/>smic Infinities </a> </h1>
           </Link>
         </div>
         <div className='nav-links'>

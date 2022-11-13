@@ -5,18 +5,76 @@
 
 .nav-links{
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 25px;
+  top: 50px;
 }
 
 .header-image {
-  background-image: url('./pages/Assets/allPages/headerImg.png');
+  background-image: url('./pages/Assets/allPages/headerImg6.png');
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
-  height: 200px;
+  height: 225px;
+  box-shadow: 0 5px 5px #ffe3eb;
 }
+
+.header-logo {
+  position: absolute;
+  left: 25px;
+  top: 50px;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 10px;
+  font-size: 60px;
+}
+
+.footer-image {
+  background-image: url('./pages/Assets/allPages/headerImg6.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+}
+
+.gallery {
+  --s: 200px; /* control the size */
+  --g: 10px;  /* control the gap */
+  display: grid;
+  margin: calc(var(--s) + var(--g));
+}
+
+.gallery > img {
+  grid-area: 1/1;
+  width: var(--s);
+  aspect-ratio: 1.15;
+  object-fit: cover;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%,75% 100%,25% 100%,0 50%);
+  transform: translate(var(--_x,0),var(--_y,0)) scale(var(--_t,1));
+  cursor: pointer;
+  transition: .2s linear;
+}
+.gallery > img:hover {
+  filter: grayscale(0);
+  z-index: 1;
+  --_t: 1.2;
+}
+
+.gallery > img:nth-child(1) {--_y: calc(-100% - var(--g))}
+.gallery > img:nth-child(7) {--_y: calc( 100% + var(--g))}
+.gallery > img:nth-child(3),
+.gallery > img:nth-child(5) {--_x: calc(-75% - .87*var(--g))}
+.gallery > img:nth-child(4),
+.gallery > img:nth-child(6) {--_x: calc( 75% + .87*var(--g))}
+.gallery > img:nth-child(3),
+.gallery > img:nth-child(4) {--_y: calc(-50% - .5*var(--g))}
+.gallery > img:nth-child(5), 
+.gallery > img:nth-child(6) {--_y: calc( 50% + .5*var(--g))}
+
+/* #card-img-side {
+  width: 25%;
+  /* height: 15vw; */
+  /* object-fit: contain;
+} */ */
 
 #landing-row {
   align-items: center;
@@ -65,6 +123,6 @@
     border-color: transparent;
   }
   50% {
-    border-color: orange;
+    border-color: #434044;
   }
 }

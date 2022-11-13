@@ -6,7 +6,7 @@ const Footer = () => {
   const location = useLocation();
   const navigate = useNavigate();
   return (
-    <footer className="w-100 mt-auto bg-danger p-4 footer">
+    <footer className="w-100 mt-auto p-4 footer footer-image">
       <div className="container text-center">
         {location.pathname !== '/' && (
           <button

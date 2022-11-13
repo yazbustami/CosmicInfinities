@@ -352,7 +352,7 @@ END NORMALIZE CSS
 html,
 body {
   min-height: 100%;
-  background-color: #f5eaee
+  background-color: #f1ede9
 }
 
 body {
@@ -361,8 +361,8 @@ body {
   font-family: 'Merriweather', serif;
   font-size: 16px;
   color: black;
-  background-color: #f5eaee;
-  /* background-image: linear-gradient(to right, rgb(128, 119, 134) , rgb(84, 34, 53)); */
+  background-color: #fff7f9;
+  /* background-image: linear-gradient(to right, #fcf0f3, #ffb1d9); */
 }
 
 h1,
@@ -434,7 +434,7 @@ header {
   font-family: 'Merriweather', serif;
   font-size: 16px;
   color: black;
-  background-color: #f5eaee;
+  /* background-color: #f5eaee; */
 
 }
 
