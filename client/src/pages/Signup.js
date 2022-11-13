@@ -115,10 +115,16 @@ const Signup = () => {
             )}
           </div>
         </div>
+        <div className='zodiac-info'>
+          <p>Don't know your sign? Follow the link to learn more!</p>
+       <Link to="/zodiac">View Zodiac Info</Link>
+       </div>
       </div>
+
+   
       
 {/* Cards */}
-
+{/* 
       <div className="row row-cols-1 row-cols-md-4">
   <div className="col mb-4">
     <div className="card">
@@ -243,7 +249,7 @@ const Signup = () => {
       </div>
     </div>
   </div>
-</div>
+</div> */}
 
 
 

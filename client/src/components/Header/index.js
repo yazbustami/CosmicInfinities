@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import constellation from '../../pages/Assets/Pictures/favicon-32x32.png'
+import constellation from '../../pages/Assets/Pictures/logoMoon.png'
+// import hands from '../../pages/Assets/Pictures/handsLogo.png'
 import Auth from '../../utils/auth';
 // import logo from '../../pages/Assets/Pictures/cosmicLogo.png'
 // import headImg from '../../pages/Assets/allPages/headerImg.png';
@@ -17,12 +18,12 @@ const Header = () => {
   //   padding: "10px",
   // };
   return (
-    <header className="text-light mb-4 pb-3 flex-row align-center">
+    <header className="mb-4 pb-3 flex-row align-center">
       <div className="header-wrapper">
         <div className="header-image">
           <Link className="text-light" to="/">
             <h1 className="m-0 header-logo"> <a href="/">
-              C<img src={constellation} width="25px" alt=""/>smic Infinities </a> </h1>
+              C<img src={constellation} width="50px" height="80px"alt=""/>smic Infinities </a> </h1>
           </Link>
         </div>
         <div className='nav-links'>

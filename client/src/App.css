@@ -1,6 +1,7 @@
 .header-wrapper {
   width: 100%;
   position: relative;
+  height: 250px;
 }
 
 .nav-links{
@@ -10,13 +11,14 @@
 }
 
 .header-image {
-  background-image: url('./pages/Assets/allPages/headerImg6.png');
+  /* background-image: url('./pages/Assets/allPages/headerImg7.png'); */
+  background-image: linear-gradient(203.77deg, #dcd7f7 10%, #edd7dd 60%, #fff7f9 100%);
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
   height: 225px;
-  box-shadow: 0 5px 5px #ffe3eb;
+  /* box-shadow: 0 5px 5px #ffe3eb; */
 }
 
 .header-logo {
@@ -29,7 +31,7 @@
 }
 
 .footer-image {
-  background-image: url('./pages/Assets/allPages/headerImg6.png');
+  background-image: linear-gradient(203.77deg, #dcd7f7 10%, #edd7dd 60%, #fff7f9 100%);
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
