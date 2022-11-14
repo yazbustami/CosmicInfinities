@@ -17,7 +17,7 @@ const ZodiacInfo = () => {
   return (
     <div className="container" id='landing-container'>
       <div className="row" id='zodiac-info'>     
-          <h1 id='landing-text'>Are you ready to discover what is written in your stars? </h1>
+          <h4 id='landing-text'>Discover what is written in your stars! </h4>
           <div className="row row-cols-1 row-cols-md-4">
   <div className="col mb-4">
     <div className="card">

@@ -62,7 +62,7 @@ const ThoughtForm = () => {
 
   return (
     <div>
-      <h3>Share your thoughts:</h3>
+      <h3>Share your ✨ cosmic ✨ thoughts:</h3>
 
       {Auth.loggedIn() ? (
         <>
@@ -80,7 +80,7 @@ const ThoughtForm = () => {
             <div className="col-12 col-lg-9">
               <textarea
                 name="thoughtText"
-                placeholder="Here's a new thought..."
+                placeholder="thoughts about your stars and what is on your mind ✨"
                 value={thoughtText}
                 className="form-input w-100"
                 style={{ lineHeight: '1.5', resize: 'vertical' }}

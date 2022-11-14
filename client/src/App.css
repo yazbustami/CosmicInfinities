@@ -6,8 +6,27 @@
 
 .nav-links{
   position: absolute;
-  right: 25px;
+  right: 50px;
   top: 50px;
+}
+
+.nav-btn {
+  margin: 10px;
+  padding: 5px;
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  color: #434044;
+}
+
+.nav-btn:link {
+  color: #a97793;
+}
+
+.nav-btn:hover {
+  color: #a97793;
 }
 
 .header-image {
@@ -78,6 +97,10 @@
   /* object-fit: contain;
 } */ */
 
+.zodiac-info {
+  align-items: center;
+  justify-content: center;
+}
 #landing-row {
   align-items: center;
   justify-content: center;

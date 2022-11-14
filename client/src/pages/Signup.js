@@ -103,7 +103,7 @@ const Signup = () => {
                   style={{ cursor: 'pointer' }}
                   type="submit"
                 >
-                  Submit
+                 Submit 💫
                 </button>
               </form>
             )}
@@ -114,11 +114,13 @@ const Signup = () => {
               </div>
             )}
           </div>
+      
         </div>
-        <div className='zodiac-info'>
-          <p>Don't know your sign? Follow the link to learn more!</p>
+        <div className='row'>
+          <p className='zodiac-info'>Not sure of your sign? Follow the link to learn more!</p>
        <Link to="/zodiac">View Zodiac Info</Link>
        </div>
+      
       </div>
 
    

@@ -929,7 +929,7 @@ color: black
 }
 
 .text-light {
-  color: #d9e9e8 !important;
+  color:#434044 !important;
   /* logo color */
 }
 
@@ -951,7 +951,7 @@ color: black
 
 /* BACKGROUND UTILS */
 .bg-primary {
-  background-color: #f5eaee !important;
+  background-color: #dcd7f7 !important;
   /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg); */
   /* background-size: cover; */
 
@@ -1023,7 +1023,7 @@ color: black
   border: 1px solid transparent;
   outline: none;
   color: #1a1a1a;
-  background-color: #d9e9e8;
+  background-color: white;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
@@ -1052,12 +1052,15 @@ color: black
 }
 
 .btn.btn-primary {
-  background-color: #d9e9e8;
-  color: #511626
+  outline: none;
+  text-decoration: none;
+  /* font-family: 'Raleway', sans-serif; */
+  font-size: 15px;
+  color: #434044;
 }
 
 .btn.btn-primary:hover {
-  background-color: #a97793;
+  background-color: #dcd7f7;
 }
 
 .btn.btn-danger {
@@ -1077,7 +1080,7 @@ color: black
 }
 
 .btn.btn-info:hover {
-  background-color: #a97793;
+  background-color: #dcd7f7;
   text-decoration: none;
   color: white;
 }
@@ -1088,7 +1091,7 @@ color: black
 }
 
 .btn.btn-light:hover {
-  background-color: #a97793;
+  background-color: #dcd7f7;
   text-decoration: none;
   color: white;
 }
@@ -1138,6 +1141,7 @@ color: black
 .card .card-header {
   padding: 0.375rem;
   /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg); */
+  background-color: #dcd7f7;
   color: #d9e9e8;
 }
 
@@ -1196,7 +1200,7 @@ form .form-input {
   width: 100%;
   padding: 0.75rem;
   color: #1a1a1a;
-  background-color: #d9e9e8;
+  background-color: white;
   margin: 0.625rem 0;
   font-size: 1.2rem;
   border: 1px solid #484848;
