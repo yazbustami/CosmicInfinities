@@ -101,11 +101,25 @@
   justify-content: center;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 #landing-text {
   font-size: 4em;
   text-align: center;
   color: #434044;
+}
+
+<<<<<<< HEAD
+=======
+#logo-header {
+  padding-left: 5rem;
+}
+>>>>>>> main
+
+#logo-header:hover {
+  color: #a97793;
 }
 
 
