@@ -123,68 +123,68 @@ const Signup = () => {
     </div>
     <div className="col mb-4">
     <div className="card">
-      <img src={taurus} className="card-img-top" alt="aries" />
+      <img src={taurus} className="card-img-top" alt="taurus" />
       </div>
     </div>
     <div className="col mb-4">
     <div className="card">
-      <img src={gemini} className="card-img-top" alt="aries" />
+      <img src={gemini} className="card-img-top" alt="gemini" />
       </div>
     </div>
     <div className="col mb-4">
     <div className="card">
-      <img src={cancer} className="card-img-top" alt="aries" />
+      <img src={cancer} className="card-img-top" alt="cancer" />
       </div>
     </div>
     <div className="col mb-4">
     <div className="card">
-      <img src={leo} className="card-img-top" alt="aries" />
+      <img src={leo} className="card-img-top" alt="leo" />
       </div>
     </div>
     <div className="col mb-4">
     <div className="card">
-      <img src={virgo} className="card-img-top" alt="aries" />
+      <img src={virgo} className="card-img-top" alt="virgo" />
       </div>
     </div>
     <div className="col mb-4">
     <div className="card">
-      <img src={libra} className="card-img-top" alt="aries" />
+      <img src={libra} className="card-img-top" alt="libra" />
       </div>
     </div>
     <div className="col mb-4">
     <div className="card">
-      <img src={scorpio} className="card-img-top" alt="aries" />
+      <img src={scorpio} className="card-img-top" alt="scorpio" />
       </div>
     </div>
     <div className="col mb-4">
     <div className="card">
-      <img src={sagittarius} className="card-img-top" alt="aries" />
+      <img src={sagittarius} className="card-img-top" alt="saggitarius" />
       </div>
     </div>
     <div className="col mb-4">
     <div className="card">
-      <img src={capricorn} className="card-img-top" alt="aries" />
+      <img src={capricorn} className="card-img-top" alt="capricorn" />
       </div>
     </div>
     <div className="col mb-4">
     <div className="card">
-      <img src={aquarius} className="card-img-top" alt="aries" />
+      <img src={aquarius} className="card-img-top" alt="aquarius" />
       </div>
     </div>
     <div className="col mb-4">
     <div className="card">
-      <img src={pisces} className="card-img-top" alt="aries" />
+      <img src={pisces} className="card-img-top" alt="pisces" />
       </div>
     </div>
   </div>
 
   <div class="card text-center">
-  <div class="card-header">
+  <div class="card-header p-3">
   </div>
   <div class="card-body">
   <p className='zodiac-info'>You can read more about your sign and cosmic infinity here.</p>
   <Link className="btn btn-secondary" to="/zodiac">
-                More cosmic goodness 
+                More Cosmic Infinities
               </Link>
   </div>
 </div>

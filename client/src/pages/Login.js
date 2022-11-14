@@ -82,7 +82,6 @@ const Login = (props) => {
                     Submit
                   </button>
                 </form>
-                <Quote />
 
               </>
 

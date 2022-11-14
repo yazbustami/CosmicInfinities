@@ -17,7 +17,7 @@
   text-decoration: none;
   padding: 2px 1px 0;
   font-family: 'Raleway', sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   color: #434044;
 }
 
@@ -128,11 +128,12 @@
 }
 
 .typewriter h4 {
-  color: black;
-  opacity: 0.5;
+  color: #434044 !important;
+  /* background-color: #a97793; */
+  opacity: .5;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid rgb(0, 0, 0); /* The typwriter cursor */
+  /* border-right: 0em solid rgb(253, 13, 13); The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.08em; /* Adjust as needed */

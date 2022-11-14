@@ -35,7 +35,7 @@ const Header = () => {
               <Link className="nav-btn" to="/home">
                 Forum
               </Link>
-              <button className="nav-btn" onClick={logout}>
+              <button style={{outline: "none", textDecoration: "none"}}className="nav-btn" onClick={logout}>
                 Logout
               </button>
             </>

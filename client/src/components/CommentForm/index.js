@@ -41,7 +41,7 @@ const CommentForm = ({ thoughtId }) => {
 
   return (
     <div>
-      <h4>What are your thoughts on this thought?</h4>
+      <h4>Add your cosmic thoughts here ✨ </h4>
 
       {Auth.loggedIn() ? (
         <>
@@ -60,7 +60,7 @@ const CommentForm = ({ thoughtId }) => {
             <div className="col-12 col-lg-9">
               <textarea
                 name="commentText"
-                placeholder="Add your comment..."
+                placeholder="cosmically thinking ✨✨"
                 value={commentText}
                 className="form-input w-100"
                 style={{ lineHeight: '1.5', resize: 'vertical' }}
