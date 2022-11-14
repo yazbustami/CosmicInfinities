@@ -16,9 +16,12 @@ const Footer = () => {
             &larr; Go Back
           </button>
         )}
-        <h6>
-         <img src={constellation} width="15px" alt=""/> Cosmic Infinities
-        </h6>
+        <a href="https://github.com/yazbustami/CosmicInfinities" target="_blank">
+          <h6>
+            <img src={constellation} width="15px" alt=" constellation"
+            /> Cosmic Infinities
+          </h6>
+        </a>
       </div>
     </footer>
   );

@@ -10,9 +10,10 @@
 |[Screenshot](#screenshot)                      |
 |[Live Link](#live-link)                        |
 |[Installation](#installation)                  |
+|[Description](#description)                        |
 |[Built With](#built-with)                      |
 |[Continued Development](#continued-development)|
-|[Authors](#authors)                            |
+|[Contributors](#contributors)                  |
 |[License](#license)                            |
 
 
@@ -38,6 +39,10 @@ User will be able to visit website live thru Heroku. If User wants to download c
 
 ---
 
+## **Description**
+
+
+---
 ## **Built With**
 |            |
 |------------| 
@@ -56,7 +61,7 @@ User will be able to visit website live thru Heroku. If User wants to download c
 
 ---
 
-## **Authors**
+## **Contributors**
 |Visit our GitHub:                                   | 
 |-----------------------------------------------     |
 |[Yasmin Bustamani](https://github.com/yazbustami)   |

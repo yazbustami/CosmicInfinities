@@ -1,4 +1,4 @@
-import React, { useState } from 'react';//wrote useEffect
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../utils/mutations';
@@ -97,8 +97,8 @@ const Login = (props) => {
         </div>
       </div>
 
-      <div class="typewriter"> 
-      <h4> <Quote/> </h4>
+      <div class="typewriter">
+        <h4> <Quote /> </h4>
       </div>
 
     </main>

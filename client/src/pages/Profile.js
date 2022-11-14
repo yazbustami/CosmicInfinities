@@ -6,7 +6,6 @@ import { useQuery } from '@apollo/client';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 
 import Auth from '../utils/auth';
-// import cosmic from './Assets/cardHeaders/cosmicCard.png';
 import cosmic from './Assets/allPages/headerImg.png'
 
 const Profile = () => {
@@ -82,20 +81,6 @@ const Profile = () => {
             </div>
           </div>
         </div>
-      </div><div>
-
-
-        {/* <div>
-            <p>{signState.date_range}</p>
-            <p>{signState["current_date"]}</p>
-            <p>Description: {signState.description}</p>
-            <p>Compatability: {signState.compatability}</p> 
-            <p>Mood: {signState.mood}</p>
-            <p>Color: {signState.color}</p>
-            <p>Lucky Number: {signState.lucky_number}</p>
-            <p>Lucky Time: {signState.lucky_time}</p>
-          </div> */}
-
       </div>
     </div>
   );
