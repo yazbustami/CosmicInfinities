@@ -22,22 +22,21 @@ const Header = () => {
       <div className="header-wrapper">
         <div className="header-image">
           <Link className="text-light" to="/">
-            <h1 className="m-0 header-logo"> <a href="/">
-              C<img src={constellation} width="50px" height="80px"alt=""/>smic Infinities </a> </h1>
+            <h1 className="m-0 header-logo">C<img src={constellation} width="50px" height="80px" alt="" />smic Infinities </h1>
           </Link>
         </div>
         <div className='nav-links'>
           {Auth.loggedIn() ? (
             <>
               <Link className="nav-btn" to="/me">
-                {Auth.getProfile().data.username}'s profile
+                {Auth.getProfile().data.username}'s Profile
               </Link>
               <Link className="nav-btn" to="/home">
                 Forum
               </Link>
-              <button style={{outline: "none", textDecoration: "none"}}className="nav-btn" onClick={logout}>
+              <Link className="nav-btn" to="/" onClick={logout}>
                 Logout
-              </button>
+              </Link>
             </>
           ) : (
             <>
