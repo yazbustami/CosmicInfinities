@@ -1139,7 +1139,7 @@ div.card.text-center.m-3 {
 }
 
 .card {
-  border: 1px solid #978e92;
+  border: none;
   margin-bottom: 1rem;
   box-shadow: 6px 6px 3px #978e92;
 }
