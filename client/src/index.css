@@ -19,6 +19,7 @@ html {
  */
 body {
   margin: 0;
+  background-color: #f5eaee;
 }
 
 /**
@@ -100,7 +101,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Merriweather', serif;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -351,15 +352,17 @@ END NORMALIZE CSS
 html,
 body {
   min-height: 100%;
+  background-color: #f1ede9
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Merriweather', serif;
   font-size: 16px;
-  color: #ffffff;
-  background-image: linear-gradient(to right, rgb(128, 119, 134) , rgb(84, 34, 53));
+  color: black;
+  background-color: #fff7f9;
+  /* background-image: linear-gradient(to right, #fcf0f3, #ffb1d9); */
 }
 
 h1,
@@ -368,9 +371,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Merriweather', serif;
   margin: 0 0 0.5rem;
   line-height: 1.25;
+  color: #000000;
 }
 
 h1 {
@@ -425,9 +429,28 @@ p.m-0 {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
 }
+header {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  color: black;
+  /* background-color: #f5eaee; */
+
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  color: black;
+  background-color: #f5eaee !important;
+
+}
 
 .text-light a {
-  color: white;
+  color: #434044;
   text-decoration: none;
   font-size: larger;
 }
@@ -907,7 +930,7 @@ color: black
 }
 
 .text-light {
-  color: #d9e9e8 !important;
+  color:#434044 !important;
   /* logo color */
 }
 
@@ -929,9 +952,10 @@ color: black
 
 /* BACKGROUND UTILS */
 .bg-primary {
-  /* background-color: #8b648a !important; */
-  background-image: url(./pages/Assets/Pictures/galaxyred.jpeg);
-  background-size: cover;
+  background-color: #dcd7f7 !important;
+  /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg); */
+  /* background-size: cover; */
+
 
 }
 /* changes cosmic background header */
@@ -949,8 +973,12 @@ color: black
 }
 
 .bg-dark {
-    background-image: url(./pages/Assets/Pictures/galaxyred.jpeg);
-  background-size: cover;
+  background-image: linear-gradient(203.77deg, #dcd7f7 10%, #edd7dd 60%, #fff7f9 100%);
+    /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg);
+  background-size: cover; */
+  /* background-color: #ebe2db !important; */
+  /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg); */
+  background-color: #f5eaee;
 }
 
 .bg-white {
@@ -997,12 +1025,12 @@ color: black
   border: 1px solid transparent;
   outline: none;
   color: #1a1a1a;
-  background-color: #d9e9e8;
+  background-color: rgb(230, 230, 230);
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .btn:hover {
-  background-color: #cecece;
+  background-color: #dcd7f7;
 }
 
 .btn.btn-squared {
@@ -1026,12 +1054,15 @@ color: black
 }
 
 .btn.btn-primary {
-  background-color: #d9e9e8;
-  color: #511626
+  outline: none;
+  text-decoration: none;
+  /* font-family: 'Raleway', sans-serif; */
+  font-size: 15px;
+  color: #434044;
 }
 
 .btn.btn-primary:hover {
-  background-color: #a97793;
+  background-color: #dcd7f7;
 }
 
 .btn.btn-danger {
@@ -1051,7 +1082,7 @@ color: black
 }
 
 .btn.btn-info:hover {
-  background-color: #a97793;
+  background-color: #dcd7f7;
   text-decoration: none;
   color: white;
 }
@@ -1062,7 +1093,7 @@ color: black
 }
 
 .btn.btn-light:hover {
-  background-color: #a97793;
+  background-color: #dcd7f7;
   text-decoration: none;
   color: white;
 }
@@ -1104,21 +1135,24 @@ color: black
 }
 
 .card {
-  border: 1px solid #1a1a1a;
+  border: 1px solid #978e92;
   margin-bottom: 1rem;
+  box-shadow: 6px 6px 3px #978e92;
 }
 
 .card .card-header {
   padding: 0.375rem;
-  background-image: url(./pages/Assets/Pictures/galaxyred.jpeg);
+  background-image: linear-gradient(203.77deg, #dcd7f7 10%, #edd7dd 60%, #fff7f9 100%);
+  /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg); */
+  background-color: #dcd7f7;
   color: #d9e9e8;
 }
 
 .card .card-body {
   padding: 0.375rem;
-  background-image: url(./pages/Assets/Pictures/galaxyred.jpeg);
+  /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg); */
   background-size: cover;
-  color: white;
+  color: black;
 }
 
 .card .card-footer {
@@ -1127,7 +1161,7 @@ color: black
 }
 
 .card.card-rounded {
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
 }
 
 .card.card-rounded .card-header {
@@ -1157,7 +1191,9 @@ form select {
   background-position-x: 98%;
   background-position-y: 50%;
 }
-
+.cosmic-img{
+  min-height: 100%;
+}
 form label,
 form .form-label {
   display: inline-block;
@@ -1169,7 +1205,7 @@ form .form-input {
   width: 100%;
   padding: 0.75rem;
   color: #1a1a1a;
-  background-color: #d9e9e8;
+  background-color: white;
   margin: 0.625rem 0;
   font-size: 1.2rem;
   border: 1px solid #484848;
@@ -1280,6 +1316,7 @@ label form [type='radio'] {
   flex-direction: row;
   margin-left: -15px;
   margin-right: -15px;
+  /* width: 90%; */
 }
 
 [class*='col-'] {
@@ -1287,7 +1324,7 @@ label form [type='radio'] {
   width: 100%;
   padding-right: 4px;
   padding-left: 1px;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .col-auto {
@@ -1356,7 +1393,7 @@ label form [type='radio'] {
 }
 
 h6 {
-  color: white;
+  color: black;
   font-size: medium;
 }
 
@@ -1500,7 +1537,7 @@ h6 {
   .col-md-10 {
     flex: 0 0 83.33333%;
     max-width: 83.33333%;
-    background-image: url(./pages/Assets/Pictures/galaxyred.jpeg);
+    /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg); */
   }
   .col-md-11 {
     flex: 0 0 91.66667%;
@@ -1736,29 +1773,3 @@ h6 {
     align-content: center;
   }
 }
-
-.typewriter h4 {
-  color: black;
-  opacity: .5;
-  font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid rgb(0, 0, 0); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .08em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
-}
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
-}
-
