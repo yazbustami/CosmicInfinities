@@ -8,8 +8,8 @@
 |Table of Contents                              |
 |-----------------------------------------------|
 |[Screenshot](#screenshot)                      |
-|[Installation](#installation)                  |
 |[Live Link](#live-link)                        |
+|[Installation](#installation)                  |
 |[Built With](#built-with)                      |
 |[Continued Development](#continued-development)|
 |[Authors](#authors)                            |
@@ -19,30 +19,40 @@
 ---
 
 ## **Screenshot**
-insert something
 
----
-
-## **Installation**
-insert something
 
 ---
 
 ## **Live Link**
-insert something
+[Cosmic Infinities]()
+
+---
+
+## **Installation**
+User will be able to visit website live thru Heroku. If User wants to download code:
+|Terminal       |
+|---------------|
+|npm i          |
+|npm run seed   |
+|npm run develop|
 
 ---
 
 ## **Built With**
-insert something
+|            |
+|------------| 
+|ReactJs     |
+|MongoDB     |
+|Mongoose ODM|
+|Express.js  |
+|Node.js     |
+|GraphQL API |
+|Heroku      |
 
 ---
 
 ## **Continued Development**
-insert something
-React
-MongoDB
-...
+
 
 ---
 

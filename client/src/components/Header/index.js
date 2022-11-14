@@ -16,7 +16,7 @@ const Header = () => {
   //   color: "Black",
   //   backgroundColor: '#f5eaee;',
   //   padding: "10px",
-  // };
+  // }
   return (
     <header className="mb-4 pb-3 flex-row align-center">
       <div className="header-wrapper">
