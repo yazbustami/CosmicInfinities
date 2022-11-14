@@ -15,18 +15,18 @@ const Home = () => {
       <div className="flex-row justify-center">
         <div
           className="col-12 col-md-10 mb-3 p-3"
-          style={{ border: '1px dotted #1a1a1a' }}
+          style={{ border: '1px solid' }}
         >
           <ThoughtForm />
         </div>
 
         <div className="col-12 col-md-8 mb-3">
           {loading ? (
-            <div>Loading...</div>
+            <div>Cosmically thinking ...</div>
           ) : (
             <ThoughtList
               thoughts={thoughts}
-              title="Some Feed for Thought(s)..."
+              title="Some Cosmic Thought(s)..."
             />
           )}
         </div>
