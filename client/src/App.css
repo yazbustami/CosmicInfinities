@@ -1,6 +1,5 @@
 .header-wrapper {
   width: 100%;
-  /* position: relative; */
   height: 250px;
 }
 
@@ -21,9 +20,7 @@
   color: #434044;
   display: flex;
   float: right;
-  /* padding: 0, 20px, 14px; */
-  /* padding-top: 50px;
-  padding-right: 15px; */
+  padding: 14px;
 }
 
 .nav-btn:link {
@@ -35,14 +32,12 @@
 }
 
 .header-image {
-  /* background-image: url('./pages/Assets/allPages/headerImg7.png'); */
   background-image: linear-gradient(203.77deg, #dcd7f7 10%, #edd7dd 60%, #fff7f9 100%);
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
   height: 225px;
-  /* box-shadow: 0 5px 5px #ffe3eb; */
 }
 
 .header-logo {
@@ -97,12 +92,6 @@
 .gallery > img:nth-child(5), 
 .gallery > img:nth-child(6) {--_y: calc( 50% + .5*var(--g))}
 
-/* #card-img-side {
-  width: 25%;
-  /* height: 15vw; */
-  /* object-fit: contain;
-} */ */
-
 .zodiac-info {
   align-items: center;
   justify-content: center;
@@ -112,34 +101,19 @@
   justify-content: center;
 }
 
-#landing-pitch {
-  /* align-items: center;
-    justify-content: center; */
-  /* padding: 5px;
-    margin: 5px; */
-}
 
 #landing-text {
   font-size: 4em;
   text-align: center;
   color: #434044;
-  /* padding: 10px;
-    margin: 10px; */
 }
 
-#profile-card {
-  /* width: 50%;
-  height: 10rem;
-  object-fit: cover; */
-}
 
 .typewriter h4 {
   color: #434044 !important;
-  /* background-color: #a97793; */
   opacity: .5;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  /* border-right: 0em solid rgb(253, 13, 13); The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.08em; /* Adjust as needed */
