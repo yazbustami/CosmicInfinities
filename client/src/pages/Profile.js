@@ -67,8 +67,8 @@ const Profile = () => {
       <div className="card mb-3"
         style={{ maxWidth: '100%' }}>
         <div className="row no-gutters">
-          <div className="col-md-4 card-img-side">
-            <img style={{width: 300, height: 300}}src={cosmic} alt="..." />
+          <div className="col-md-4 card-img-side" id="profile-card">
+            <img style={{width: 300, height: 300}}src={cosmic} alt="..." className='cosmic-img'/>
           </div>
           <div className="col-md-8 p-0">
             <div className="card-body">

@@ -116,8 +116,15 @@
 #landing-text {
   font-size: 4em;
   text-align: center;
+  color: #434044;
   /* padding: 10px;
     margin: 10px; */
+}
+
+#profile-card {
+  /* width: 50%;
+  height: 10rem;
+  object-fit: cover; */
 }
 
 .typewriter h4 {

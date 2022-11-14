@@ -1023,12 +1023,12 @@ color: black
   border: 1px solid transparent;
   outline: none;
   color: #1a1a1a;
-  background-color: white;
+  background-color: rgb(230, 230, 230);
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .btn:hover {
-  background-color: #cecece;
+  background-color: #dcd7f7;
 }
 
 .btn.btn-squared {
@@ -1188,7 +1188,9 @@ form select {
   background-position-x: 98%;
   background-position-y: 50%;
 }
-
+.cosmic-img{
+  min-height: 100%;
+}
 form label,
 form .form-label {
   display: inline-block;
@@ -1311,6 +1313,7 @@ label form [type='radio'] {
   flex-direction: row;
   margin-left: -15px;
   margin-right: -15px;
+  /* width: 90%; */
 }
 
 [class*='col-'] {
@@ -1318,7 +1321,7 @@ label form [type='radio'] {
   width: 100%;
   padding-right: 4px;
   padding-left: 1px;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .col-auto {
