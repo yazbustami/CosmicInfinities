@@ -1,6 +1,6 @@
 .header-wrapper {
   width: 100%;
-  position: relative;
+  /* position: relative; */
   height: 250px;
 }
 
@@ -19,6 +19,11 @@
   font-family: 'Raleway', sans-serif;
   font-size: 30px;
   color: #434044;
+  display: flex;
+  float: right;
+  /* padding: 0, 20px, 14px; */
+  /* padding-top: 50px;
+  padding-right: 15px; */
 }
 
 .nav-btn:link {
@@ -42,6 +47,7 @@
 
 .header-logo {
   position: absolute;
+  color:#434044;
   left: 25px;
   top: 50px;
   font-family: 'Raleway', sans-serif;
