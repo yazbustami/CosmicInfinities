@@ -1,10 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import constellation from '../../pages/Assets/Pictures/logoMoon.png'
-// import hands from '../../pages/Assets/Pictures/handsLogo.png'
 import Auth from '../../utils/auth';
-// import logo from '../../pages/Assets/Pictures/cosmicLogo.png'
-// import headImg from '../../pages/Assets/allPages/headerImg.png';
 
 const Header = () => {
   const logout = (event) => {
@@ -12,11 +9,6 @@ const Header = () => {
     Auth.logout();
   };
 
-  // const headerStyle = {
-  //   color: "Black",
-  //   backgroundColor: '#f5eaee;',
-  //   padding: "10px",
-  // };
   return (
     <header className="mb-4 pb-3 flex-row align-center">
       <div className="header-wrapper">

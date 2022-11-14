@@ -41,14 +41,13 @@ const CommentForm = ({ thoughtId }) => {
 
   return (
     <div>
-      <h4>Add your cosmic thoughts here ✨ </h4>
+      <h4>Add your cosmic thoughts here ✨ ... </h4>
 
       {Auth.loggedIn() ? (
         <>
           <p
-            className={`m-0 ${
-              characterCount === 280 || error ? 'text-danger' : ''
-            }`}
+            className={`m-0 ${characterCount === 280 || error ? 'text-danger' : ''
+              }`}
           >
             Character Count: {characterCount}/280
             {error && <span className="ml-2">{error.message}</span>}

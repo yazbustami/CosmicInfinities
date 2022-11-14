@@ -71,6 +71,7 @@ pre {
  */
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**
@@ -953,10 +954,6 @@ color: black
 /* BACKGROUND UTILS */
 .bg-primary {
   background-color: #dcd7f7 !important;
-  /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg); */
-  /* background-size: cover; */
-
-
 }
 /* changes cosmic background header */
 
@@ -974,10 +971,6 @@ color: black
 
 .bg-dark {
   background-image: linear-gradient(203.77deg, #dcd7f7 10%, #edd7dd 60%, #fff7f9 100%);
-    /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg);
-  background-size: cover; */
-  /* background-color: #ebe2db !important; */
-  /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg); */
   background-color: #f5eaee;
 }
 
@@ -1056,7 +1049,6 @@ color: black
 .btn.btn-primary {
   outline: none;
   text-decoration: none;
-  /* font-family: 'Raleway', sans-serif; */
   font-size: 15px;
   color: #434044;
 }
@@ -1099,8 +1091,7 @@ color: black
 }
 
 .btn.btn-dark {
-  background-color: #1a1a1a;
-  color: #d9e9e8;
+ background: none;
 }
 
 .btn.btn-dark:hover {
@@ -1132,6 +1123,10 @@ color: black
 
 .btn.btn-link:hover {
   background-color: #31a9e1;
+}
+
+div.card.text-center.m-3 {
+  border: none;
 }
 
 .card {
@@ -1392,7 +1387,7 @@ label form [type='radio'] {
   max-width: 100%;
 }
 
-h6 {
+h6  {
   color: black;
   font-size: medium;
 }
