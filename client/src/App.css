@@ -21,6 +21,7 @@
   color: #434044;
   display: flex;
   float: right;
+  padding-right: 15px;
   /* padding: 0, 20px, 14px; */
   /* padding-top: 50px;
   padding-right: 15px; */
@@ -112,13 +113,6 @@
   justify-content: center;
 }
 
-#landing-pitch {
-  /* align-items: center;
-    justify-content: center; */
-  /* padding: 5px;
-    margin: 5px; */
-}
-
 #landing-text {
   font-size: 4em;
   text-align: center;
@@ -127,11 +121,14 @@
     margin: 10px; */
 }
 
-#profile-card {
-  /* width: 50%;
-  height: 10rem;
-  object-fit: cover; */
+#logo-header {
+  padding-left: 5rem;
 }
+
+#logo-header:hover {
+  color: #a97793;
+}
+
 
 .typewriter h4 {
   color: #434044 !important;
