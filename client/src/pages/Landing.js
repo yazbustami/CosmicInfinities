@@ -1,11 +1,11 @@
 import React from 'react';
 import zodiacs from './Assets/landing/zodiacAll.png'
 
+
 import '../';
 
 const Landing = () => {
   return (
-
     <div className="row align-items-center">
       <div className="col pb-5">
         <img

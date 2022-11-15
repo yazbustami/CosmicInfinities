@@ -59,6 +59,7 @@ const ThoughtForm = () => {
 
       {Auth.loggedIn() ? (
         <>
+
           <p
             className={`m-0 ${characterCount === 280 || error ? 'text-danger' : ''
               }`}
@@ -86,9 +87,7 @@ const ThoughtForm = () => {
               </button>
             </div>
             {error && (
-              <div className="col-12 my-3 bg-danger text-white p-3">
-                {error.message}
-              </div>
+              <div className="col-12 my-3 bg-danger text-white p-3">{error.message}</div>
             )}
           </form>
         </>

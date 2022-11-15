@@ -3,7 +3,7 @@
   height: 250px;
 }
 
-.nav-links{
+.nav-links {
   position: absolute;
   right: 50px;
   top: 50px;
@@ -20,7 +20,9 @@
   color: #434044;
   display: flex;
   float: right;
-  padding: 14px;
+
+  padding-right: 15px;
+
 }
 
 .nav-btn:link {
@@ -42,7 +44,7 @@
 
 .header-logo {
   position: absolute;
-  color:#434044;
+  color: #434044;
   left: 25px;
   top: 50px;
   font-family: 'Raleway', sans-serif;
@@ -58,39 +60,7 @@
   background-size: cover;
 }
 
-.gallery {
-  --s: 200px; /* control the size */
-  --g: 10px;  /* control the gap */
-  display: grid;
-  margin: calc(var(--s) + var(--g));
-}
 
-.gallery > img {
-  grid-area: 1/1;
-  width: var(--s);
-  aspect-ratio: 1.15;
-  object-fit: cover;
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%,75% 100%,25% 100%,0 50%);
-  transform: translate(var(--_x,0),var(--_y,0)) scale(var(--_t,1));
-  cursor: pointer;
-  transition: .2s linear;
-}
-.gallery > img:hover {
-  filter: grayscale(0);
-  z-index: 1;
-  --_t: 1.2;
-}
-
-.gallery > img:nth-child(1) {--_y: calc(-100% - var(--g))}
-.gallery > img:nth-child(7) {--_y: calc( 100% + var(--g))}
-.gallery > img:nth-child(3),
-.gallery > img:nth-child(5) {--_x: calc(-75% - .87*var(--g))}
-.gallery > img:nth-child(4),
-.gallery > img:nth-child(6) {--_x: calc( 75% + .87*var(--g))}
-.gallery > img:nth-child(3),
-.gallery > img:nth-child(4) {--_y: calc(-50% - .5*var(--g))}
-.gallery > img:nth-child(5), 
-.gallery > img:nth-child(6) {--_y: calc( 50% + .5*var(--g))}
 
 .zodiac-info {
   align-items: center;
@@ -101,31 +71,28 @@
   justify-content: center;
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> main
 #landing-text {
   font-size: 4em;
   text-align: center;
   color: #434044;
 }
 
-<<<<<<< HEAD
-=======
+
 #logo-header {
   padding-left: 5rem;
 }
->>>>>>> main
+
 
 #logo-header:hover {
   color: #a97793;
 }
 
-
 .typewriter h4 {
   color: #434044 !important;
-  opacity: .5;
+  opacity: 0.5;
+
+
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */

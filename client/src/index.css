@@ -1070,7 +1070,6 @@ color: black
   background-color: #d9e9e8;
   color: #511626;
   border: white;
-  /* changes color of login button */
 }
 
 .btn.btn-info:hover {
@@ -1145,7 +1144,6 @@ div.card.text-center.m-3 {
 
 .card .card-body {
   padding: 0.375rem;
-  /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg); */
   background-size: cover;
   color: black;
 }
@@ -1532,7 +1530,6 @@ h6  {
   .col-md-10 {
     flex: 0 0 83.33333%;
     max-width: 83.33333%;
-    /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg); */
   }
   .col-md-11 {
     flex: 0 0 91.66667%;
