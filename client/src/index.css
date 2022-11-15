@@ -974,10 +974,6 @@ color: black
 
 .bg-dark {
   background-image: linear-gradient(203.77deg, #dcd7f7 10%, #edd7dd 60%, #fff7f9 100%);
-    /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg);
-  background-size: cover; */
-  /* background-color: #ebe2db !important; */
-  /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg); */
   background-color: #f5eaee;
 }
 
@@ -1056,7 +1052,6 @@ color: black
 .btn.btn-primary {
   outline: none;
   text-decoration: none;
-  /* font-family: 'Raleway', sans-serif; */
   font-size: 15px;
   color: #434044;
 }
@@ -1078,7 +1073,6 @@ color: black
   background-color: #d9e9e8;
   color: #511626;
   border: white;
-  /* changes color of login button */
 }
 
 .btn.btn-info:hover {
@@ -1150,7 +1144,6 @@ color: black
 
 .card .card-body {
   padding: 0.375rem;
-  /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg); */
   background-size: cover;
   color: black;
 }
@@ -1537,7 +1530,6 @@ h6 {
   .col-md-10 {
     flex: 0 0 83.33333%;
     max-width: 83.33333%;
-    /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg); */
   }
   .col-md-11 {
     flex: 0 0 91.66667%;
