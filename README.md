@@ -48,7 +48,7 @@ Click Profile button to view your daily horoscope, mood, color, lucky number and
 ---
 
 ## **Live Link**
-[Cosmic Infinities]()
+[Cosmic Infinities](https://secure-anchorage-76382.herokuapp.com/)
 
 ---
 
