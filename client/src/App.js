@@ -52,36 +52,36 @@ function App() {
           <Header />
           <div className="container">
             <Routes>
-            <Route 
+              <Route
                 path="/"
                 element={<Landing />}
               />
-              <Route 
-                path="/login" 
+              <Route
+                path="/login"
                 element={<Login />}
               />
-              <Route 
-                path="/signup" 
+              <Route
+                path="/signup"
                 element={<Signup />}
               />
-              <Route 
+              <Route
                 path="/home"
                 element={<Home />}
               />
-              <Route 
-                path="/me" 
+              <Route
+                path="/me"
                 element={<Profile />}
               />
-              <Route 
-                path="/profiles/:username" 
+              <Route
+                path="/profiles/:username"
                 element={<Profile />}
               />
-              <Route 
-                path="/thoughts/:thoughtId" 
+              <Route
+                path="/thoughts/:thoughtId"
                 element={<SingleThought />}
               />
-                <Route 
-                path="/zodiac" 
+              <Route
+                path="/zodiac"
                 element={<ZodiacInfo />}
               />
             </Routes>

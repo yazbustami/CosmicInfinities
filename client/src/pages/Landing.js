@@ -1,5 +1,6 @@
 import React from 'react';
-import zodiacs from './Assets/landing/zodiacAll.png';
+import zodiacs from './Assets/landing/zodiacAll.png'
+
 
 import '../';
 

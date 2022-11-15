@@ -71,6 +71,7 @@ pre {
  */
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**
@@ -953,10 +954,6 @@ color: black
 /* BACKGROUND UTILS */
 .bg-primary {
   background-color: #dcd7f7 !important;
-  /* background-image: url(./pages/Assets/Pictures/galaxyred.jpeg); */
-  /* background-size: cover; */
-
-
 }
 /* changes cosmic background header */
 
@@ -1093,8 +1090,7 @@ color: black
 }
 
 .btn.btn-dark {
-  background-color: #1a1a1a;
-  color: #d9e9e8;
+ background: none;
 }
 
 .btn.btn-dark:hover {
@@ -1126,6 +1122,10 @@ color: black
 
 .btn.btn-link:hover {
   background-color: #31a9e1;
+}
+
+div.card.text-center.m-3 {
+  border: none;
 }
 
 .card {
@@ -1385,7 +1385,7 @@ label form [type='radio'] {
   max-width: 100%;
 }
 
-h6 {
+h6  {
   color: black;
   font-size: medium;
 }

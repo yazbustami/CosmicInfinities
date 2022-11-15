@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Import the `useParams()` hook
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
@@ -35,7 +34,6 @@ const SingleThought = () => {
           style={{
             fontSize: '1.5rem',
             fontStyle: 'italic',
-
             lineHeight: '1.5',
           }}
         >
@@ -46,7 +44,9 @@ const SingleThought = () => {
       <div className="my-5">
         <CommentList comments={thought.comments} />
       </div>
-      <div className="m-3 p-4">
+
+      <div className="m-3 p-4" >
+
         <CommentForm thoughtId={thought._id} />
       </div>
     </div>
